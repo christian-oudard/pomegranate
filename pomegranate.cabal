@@ -1,0 +1,26 @@
+name:                pomegranate
+version:             0.1.0.0
+synopsis:            A simple work timer
+-- description:         
+license:             BSD3
+license-file:        LICENSE
+author:              Christian Oudard
+maintainer:          christian.oudard@gmail.com
+-- copyright:           
+-- category:            
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+executable pomegranate
+  main-is:             Main.hs
+  -- other-modules:       
+  -- other-extensions:    
+  build-depends:
+      base >=4.9 && <4.10
+    , unix >=2.7 && <2.8
+    , time
+    , mwc-random
+    , ansi-terminal
+  -- hs-source-dirs:      
+  default-language:    Haskell2010

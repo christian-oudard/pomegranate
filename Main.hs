@@ -1,3 +1,5 @@
+module Main (main) where
+
 import Control.Concurrent (threadDelay)
 import Data.Char (chr)
 import Data.Time.Clock (getCurrentTime, diffUTCTime)
@@ -17,6 +19,7 @@ import Cancel (onCancel)
 deviationRatio = 1/8
 defaultWaitMinutes = 30
 
+main :: IO ()
 main = do
   -- Determine how long to wait for.
   timerMinutes <- parseDelay
