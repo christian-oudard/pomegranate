@@ -9,12 +9,10 @@ maintainer:          christian.oudard@gmail.com
 -- copyright:           
 -- category:            
 build-type:          Simple
-extra-source-files:  ChangeLog.md
 cabal-version:       >=1.10
 
 executable pomegranate
   main-is:             Main.hs
-  -- other-modules:       
   -- other-extensions:    
   build-depends:
       base >=4.9 && <4.10
